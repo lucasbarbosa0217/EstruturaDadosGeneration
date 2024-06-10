@@ -65,7 +65,7 @@ public class QueueAtividade {
 
 				break;
 			case 0:
-				System.out.println("\nProgrma Finalizado!");
+				System.out.println("\nPrograma Finalizado!");
 				scanner.close();
 				break;
 			default:
