@@ -34,14 +34,15 @@ public class StackAtividade {
 
 			switch (opcao) {
 			case 1:
-				System.out.println("Pilha:");
-				for (Iterator<String> iterator = livros.iterator(); iterator.hasNext();) {
-					System.out.println(iterator.next());
-				}
+			
 				System.out.println("Adicione o nome de um novo livro.");
 				scanner.nextLine();
 				String livro = scanner.nextLine();
 				livros.push(livro);
+				System.out.println("Pilha:");
+				for (Iterator<String> iterator = livros.iterator(); iterator.hasNext();) {
+					System.out.println(iterator.next());
+				}
 				System.out.println("\nLivro Adicionado!");
 				break;
 			case 2:

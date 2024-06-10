@@ -34,14 +34,15 @@ public class QueueAtividade {
 
 			switch (opcao) {
 			case 1:
-				System.out.println("Fila:");
-				for (Iterator<String> iterator = clients.iterator(); iterator.hasNext();) {
-					System.out.println(iterator.next());
-				}
+			
 				System.out.println("\nAdicione o nome de um novo cliente.");
 				scanner.nextLine();
 				String cliente = scanner.nextLine();
 				clients.add(cliente);
+				System.out.println("Fila:");
+				for (Iterator<String> iterator = clients.iterator(); iterator.hasNext();) {
+					System.out.println(iterator.next());
+				}
 				System.out.println("\nCiente Adicionado!");
 				break;
 			case 2:
